@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* Hero */
+
+main img{
+  width: 140%;
+}
+
+.hero {
+  position: relative;
+}
+
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.hero-white-txt {
+  color: #fff;
+}
+
+#find-classes-hero {
+  background: none;
+  border: 2px solid #fff;
+  padding: 8px 50px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  border-radius: 30px;
+  transition: background 200ms ease-in-out, border 200ms ease-in-out, scale 200ms ease-in-out;
+}
+
+
+#find-classes-hero:hover {
+  background-color: #000;
+  color: #fff;
+  border: 2px solid #000;
+  scale: 1.04;
+}
+
+@media screen and (max-width: 600px) {
+  .hero h1 {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .hero h1{
+    font-size: 4rem;
+  }
+
+  .hero h3{
+    font-size: 1.5rem;
+  }
+
+  .hero button a{
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .hero h1{
+    font-size: 5.5rem;
+  }
+
+  .hero h3{
+    font-size: 2rem;
+  }
+
+  #find-classes-hero a{
+    font-size: 2rem;
+  }
+}
+
+/* Step Cards */
+.starting-steps {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 15px 0;
+  row-gap: 10px;
+  justify-content: center;
+}
+
+.step {
+  width: 25%;
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.step-number {
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 100%;
+  line-height: 40px;
+  width: 40px;
+  font-size: 20px;
+  text-align: center;
+  color: #000;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+}
+
+.step-card {
+  border-radius: 6px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-height: 250px;
+  margin-top: 1.5rem;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+  text-align: center;
+}
+
+.step-card a {
+  color: #000;
+}
+
+@media screen and (max-width: 800px) {
+  .step {
+    width: 50%;
+  }
+  .step-card {
+    min-height: 150px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .step {
+    min-width: 75%;
+  }
+  .step-card {
+    min-height: 150px;
+  }
+}

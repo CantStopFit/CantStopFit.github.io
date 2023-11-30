@@ -4,117 +4,65 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/website.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <meta name="google-site-verification" content="d-vcHUgu_nDhLdfV2oY07HRPSvPorRLP-Omv_Va8ZfM"/>
     <meta name="description" content=" Pulse Peak is happy to offer elite training and workout programs to anyone! All you have to do is start a workout no signups required!">
     <meta name="robots" content=""index,follow>
     <meta name="keywords" content="PulsePeak, Pulse Peak, Elite Training, workout, at home workout">
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="icon" type="image/x-icon" src="favicon.ico" />
     <title>Pulse Peak Elite</title>
+    <link rel="icon" type="image/x-icon" src="imgs/favicon.ico" />
     <script src="java/include.js"></script>
   </head>
   <body>
     <include src="nav/nav.html"></include>
-    <div class="home-page-hero">
-      <!-- <include src="inculde-variables/weight-hero/weight-hero.html"></include> -->
-      <div class="hero-text">
-        <span>IT</span><br /><span>STARTS</span><br /><span>WITH</span><br />
-        <div class="rw-words rw-words-1">
-          <span>YOU.</span>
-          <span>A GOAL.</span>
-          <span>A CHALLENGE.</span>
-          <span>DETERMINATION.</span>
-          <span>WANT.</span>
-          <span>NEED.</span>
+    <main>
+      <div class="hero">
+        <img src="https://i0.wp.com/post.healthline.com/wp-content/uploads/2020/01/Runner-training-on-running-track-1296x728-header-1296x728.jpg?w=1155&h=1528" alt="Snow" style="width:100%;">
+        <div class="hero-text">
+          <h1>PWR_ <span class="hero-white-txt">THRU</span></h1>
+          <h3 class="hero-white-txt">Workout Classes for Any Age or Skill</h3>
+          <a href="workout.html"><button id="find-classes-hero">View Classes</button></a>
         </div>
       </div>
-    </div>
-    <div class="countdown-body">
-      <div class="countdown-header">
-        <p>We are Launching Soon</p>
-      </div>
-      <div class="countdown">
-        <div class="days">
-          <div class="box" id="days"></div>
-          <p><strong>D</strong></p>
+    </main>
+    <section class="starting-steps">
+      <div id="step-1" class="step">
+        <div class="step-number">
+          <h1>1</h1>
         </div>
-        <div class="hours">
-          <div class="box" id="hours"></div>
-          <p><strong>HR</strong></p>
-        </div>
-        <div class="minutes">
-          <div class="box" id="minutes"></div>
-          <p><strong>MIN</strong></p>
-        </div>
-        <div class="seconds">
-          <div class="box" id="seconds"></div>
-          <p><strong>SEC</strong></p>
+        <div class="step-card">
+          <h2>Find A Workout</h2>
+          <p>Choose a workout to do by clicking on this <a href="workout.html">link</a> or hitting view classes. If you need to motify do so that the workout is geared towards you!</p>
         </div>
       </div>
-    </div>
-
-    <script src="java/countdown.js"></script>
-
-    <section class="launch-info launch-overview">
-      <h1>
-        <i class="fa-solid fa-rocket"></i>Launch Overview<i
-          class="fa-solid fa-rocket"
-        ></i>
-      </h1>
-      <h4>Dec 25, 2023 @ 8:30am CST</h4>
-      <p>
-        The launch everyone has been waiting for is scheduled! This project is
-        supposed to launch at 8:30am on December 25 2023
-        <span class="orange-text"
-          >(This date may be pushed back if nesecary to iron out the
-          finishingtouches and clean up bugs)</span
-        >. By this time the goal is to have a workout timer, a playlist of fun,
-        upbeat, or chill workout music, and a set of workouts for anyone to
-        enjoy.
-      </p>
-    </section>
-
-    <section class="launch-info workout-info">
-      <h1>
-        <i class="fa-solid fa-dumbbell"></i>Workouts<i
-          class="fa-solid fa-dumbbell"
-        ></i>
-      </h1>
-      <h4>Programs Focus</h4>
-      <p>
-        These workouts are built for you and your friends and family to use and
-        build a healty, stronger and better self. Imagine how much stronger and
-        better you could feel after just a little bit of self care. You are the
-        only one that can stop you from doing anything. “Whether you think you
-        can, or you think you can't, you're right.” <br>-Henry Ford
-      </p>
-    </section>
-    <section class="launch-info music-info">
-      <h1>
-        <i class="fa-solid fa-music"></i>Music<i class="fa-solid fa-music"></i>
-      </h1>
-      <h4>Gets You Going</h4>
-      <p>
-        A custom music playlist that is good enjoyable to listen to as you are
-        working out or even warming up for the big game.
-      </p>
-    </section>
-    <section class="launch-info timer-info">
-      <h1>
-        <i class="fa-solid fa-clock"></i>Timer<i class="fa-solid fa-clock"></i>
-      </h1>
-      <h4>To Track Your Progress</h4>
-      <p>
-        This timer is designed to work seamlessly with our prebuilt workouts
-        that utilize time tracking to help you stay on track and achieve your fitness goals.
-      </p>
+      <div id="step-2" class="step">
+        <div class="step-number">
+          <h1>2</h1>
+        </div>
+        <div class="step-card">
+          <h2>Gather Your Equipment</h2>
+          <p>Get any weight, strength band, or shoe you might need to complete the workout!</p>
+        </div>
+      </div>
+      <div id="step-3" class="step">
+        <div class="step-number">
+          <h1>3</h1>
+        </div>
+        <div class="step-card">
+          <h2>Turn On Some Music</h2>
+          <p>Listen to any kind of music you want to enjoy or find some of our favorites here! Like music not on this list, submit a request!</p>
+        </div>
+      </div>
+      <div id="step-4" class="step">
+        <div class="step-number">
+          <h1>4</h1>
+        </div>
+        <div class="step-card">
+          <h2>Start The Getaway</h2>
+          <p>Start the timer and work your hardest and try your best!</p>
+        </div>
+      </div>
     </section>
   </body>
 </html>
