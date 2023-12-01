@@ -10,8 +10,8 @@
 }
 
 .challenge-hero h1{
-    font-size: 3rem;
-    font-weight: 300;
+    font-size: 4rem;
+    font-weight: 400;
 }
 
 .challenge-hero h3 {
@@ -21,7 +21,9 @@
 
 .challenge {
     width: 100%;
-    height: 20vh;
+    height: 60vh;
+    background-color: #000;
+    color: #fff;
 }
 
 .challenge-type {
@@ -34,6 +36,10 @@
     padding-left: 10px;
     font-size: 2rem;
     font-weight: 200;
+}
+
+.challenge-walkthrough {
+    padding-bottom: 10px;
 }
 
 .challenge-walkthrough h2{
