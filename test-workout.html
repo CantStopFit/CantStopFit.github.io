@@ -20,23 +20,27 @@
   <body>
     <div class="workout">
         <div class="progress-bar">
-            <span class="progress" id="workout-1"></span>
-            <span class="progress" id="workout-2"></span>
-            <span class="progress" id="workout-3"></span>
-            <span class="progress" id="workout-4"></span>
-            <span class="progress" id="workout-5"></span>
-            <span class="progress" id="workout-6"></span>
-            <span class="progress" id="workout-7"></span>
-            <span class="progress" id="workout-8"></span>
-            <span class="progress" id="workout-9"></span>
-            <span class="progress" id="workout-10"></span>
+            <span class="progress" id="jumpRopeProgress"></span>
+            <span class="progress" id="situpProgress"></span>
+            <span class="progress" id="bandedSideWalkProgress"></span>
+            <span class="progress" id="gobletSquatsProgress"></span>
+            <span class="progress" id="pushUpsProgress"></span>
+            <span class="progress" id="weightedCrossoverLungesProgress"></span>
+            <span class="progress" id="pullUpsProgress"></span>
+            <span class="progress" id="gluteBridgesProgress"></span>
+            <span class="progress" id="splitSquatsProgress"></span>
+            <span class="progress" id="plankProgress"></span>
         </div>
     </div>
     <button onclick="test()">Test</button>
+    <button onclick="test2()">Test 2</button>
     <script>
-      const workout1 = document.getElementById('workout-1')
       function test(){
-        workout1.classList.add('past');
+        document.getElementById('jumpRopeProgress').classList.add('past');
+      }
+      function test2(){
+        document.getElementById('jumpRopeProgress').classList.remove('past');
+        document.getElementById('jumpRopeProgress').classList.add('active');
       }
     </script>
   </body>
