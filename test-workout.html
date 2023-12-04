@@ -20,17 +20,24 @@
   <body>
     <div class="workout">
         <div class="progress-bar">
-            <span class="progress past" id="workout-1"></span>
-            <span class="progress past" id="workout-2"></span>
-            <span class="progress active" id="workout-3"></span>
-            <span class="progress future" id="workout-4"></span>
-            <span class="progress future" id="workout-5"></span>
-            <span class="progress future" id="workout-6"></span>
-            <span class="progress future" id="workout-7"></span>
-            <span class="progress future" id="workout-8"></span>
-            <span class="progress future" id="workout-9"></span>
-            <span class="progress future" id="workout-10"></span>
+            <span class="progress" id="workout-1"></span>
+            <span class="progress" id="workout-2"></span>
+            <span class="progress" id="workout-3"></span>
+            <span class="progress" id="workout-4"></span>
+            <span class="progress" id="workout-5"></span>
+            <span class="progress" id="workout-6"></span>
+            <span class="progress" id="workout-7"></span>
+            <span class="progress" id="workout-8"></span>
+            <span class="progress" id="workout-9"></span>
+            <span class="progress" id="workout-10"></span>
         </div>
     </div>
+    <button onclick="test()">Test</button>
+    <script>
+      const workout1 = document.getElementById('workout-1')
+      function test(){
+        workout1.classList.add('past');
+      }
+    </script>
   </body>
 </html>
