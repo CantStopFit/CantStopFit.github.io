@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="css/workout.css" />
+    <link rel="stylesheet" href="css/workout-item.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -18,7 +18,7 @@
     <script src="java/include.js"></script>
   </head>
   <body>
-    <div class="workout">
+    <div class="workout-progress">
         <div class="progress-bar">
             <span class="progress" id="jumpRopeProgress"></span>
             <span class="progress" id="situpProgress"></span>
@@ -32,8 +32,28 @@
             <span class="progress" id="plankProgress"></span>
         </div>
     </div>
-    <button onclick="test()">Test</button>
-    <button onclick="test2()">Test 2</button>
+    <div class="workout-advancment">
+      <div class="advancment-bar">
+        <button class="advancment-button active-btn" onclick="">Jump Rope</button>
+        <button class="advancment-button" onclick="">Sit Ups</button>
+        <button class="advancment-button" onclick="">Banded Side Walk</button>
+        <button class="advancment-button" onclick="">Goblet Squats</button>
+        <button class="advancment-button" onclick="">Push Ups</button>
+        <button class="advancment-button" onclick="">Weighted Crossover Lunges</button>
+        <button class="advancment-button" onclick="">Pull Ups</button>
+        <button class="advancment-button" onclick="">Glute Bridges</button>
+        <button class="advancment-button" onclick="">Split Squat</button>
+        <button class="advancment-button" onclick="">Plank</button>
+      </div>
+    </div>
+    <div class="workout">
+      <div class="workout-item">
+        <div class="workout-item-header">
+          <h1>Jump Rope</h1>
+          <h3><span class="timer-workout-item" id="jumpRopeTimer">02:00</span><button class="timer-workout-item-button" onclick="startjumpRopeTimer()"><i class="fa-solid fa-play"></i></button></h3>
+        </div>
+      </div>
+    </div>
     <script>
       function test(){
         document.getElementById('jumpRopeProgress').classList.add('past');
@@ -41,6 +61,25 @@
       function test2(){
         document.getElementById('jumpRopeProgress').classList.remove('past');
         document.getElementById('jumpRopeProgress').classList.add('active');
+      }
+      function startjumpRopeTimer() {
+        var duration = 2 * 60; // 2 minutes in seconds
+        var display = document.getElementById('jumpRopeTimer');
+
+        var jumpRopeTimer = duration, minutes, seconds;
+        setInterval(function () {
+          minutes = parseInt(jumpRopeTimer / 60, 10);
+          seconds = parseInt(jumpRopeTimer % 60, 10);
+
+          minutes = minutes < 10 ? "0" + minutes : minutes;
+          seconds = seconds < 10 ? "0" + seconds : seconds;
+
+          display.textContent = minutes + ":" + seconds;
+
+          if (--jumpRopeTimer < 0) {
+            document.getElementById('jumpRopeTimer').innerHTML = '00:00';
+          }
+        }, 1000);
       }
     </script>
   </body>
