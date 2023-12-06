@@ -20,7 +20,7 @@
   <body>
     <div class="workout-progress">
         <div class="progress-bar">
-            <span class="progress" id="jumpRopeProgress"></span>
+            <span class="progress active" id="jumpRopeProgress"></span>
             <span class="progress" id="situpProgress"></span>
             <span class="progress" id="bandedSideWalkProgress"></span>
             <span class="progress" id="gobletSquatsProgress"></span>
@@ -34,19 +34,20 @@
     </div>
     <div class="workout-advancment">
       <div class="next-buttons prev-buttons">
-        <button onclick=""><i class="fa-solid fa-angle-left"></i></button>
-        <button onclick=""><i class="fa-solid fa-angle-left"></i></button>
-        <button onclick=""><i class="fa-solid fa-angle-left"></i></button>
-        <button onclick=""><i class="fa-solid fa-angle-left"></i></button>
-        <button onclick=""><i class="fa-solid fa-angle-left"></i></button>
-        <button onclick=""><i class="fa-solid fa-angle-left"></i></button>
-        <button onclick=""><i class="fa-solid fa-angle-left"></i></button>
-        <button onclick=""><i class="fa-solid fa-angle-left"></i></button>
-        <button onclick=""><i class="fa-solid fa-angle-left"></i></button>
+        <button id="fakeBack"><i class="fa-solid fa-angle-left"></i></button>
+        <button onclick="" id="situpBack"><i class="fa-solid fa-angle-left"></i></button>
+        <button onclick="" id="bandedSideWalkback"><i class="fa-solid fa-angle-left"></i></button>
+        <button onclick="" id="gobletSquatBack"><i class="fa-solid fa-angle-left"></i></button>
+        <button onclick="" id="pushupBack"><i class="fa-solid fa-angle-left"></i></button>
+        <button onclick="" id="weightedCrossoverLungesBack"><i class="fa-solid fa-angle-left"></i></button>
+        <button onclick="" id="pullupBack"><i class="fa-solid fa-angle-left"></i></button>
+        <button onclick="" id="gluteBridgesBack"><i class="fa-solid fa-angle-left"></i></button>
+        <button onclick="" id="splitSquatBack"><i class="fa-solid fa-angle-left"></i></button>
+        <button onclick="" id="plankBack"><i class="fa-solid fa-angle-left"></i></button>
       </div>
       <div class="advancment-bar">
-        <button class="advancment-button active-btn" onclick="">Jump Rope</button>
-        <button class="advancment-button" onclick="">Sit Ups</button>
+        <button class="advancment-button active-btn" onclick="" id="jumpRopeAdvancement">Jump Rope</button>
+        <button class="advancment-button" onclick="" id="situpAdvancement">Sit Ups</button>
         <button class="advancment-button" onclick="">Banded Side Walk</button>
         <button class="advancment-button" onclick="">Goblet Squats</button>
         <button class="advancment-button" onclick="">Push Ups</button>
@@ -57,7 +58,7 @@
         <button class="advancment-button" onclick="">Plank</button>
       </div>
       <div class="next-buttons fwd-buttons">
-        <button onclick="" id="jumpRopeContinue"><i class="fa-solid fa-angle-right"></i></button>
+        <button onclick="situp()" id="jumpRopeContinue"><i class="fa-solid fa-angle-right"></i></button>
         <button onclick="" id="situpContinue"><i class="fa-solid fa-angle-right"></i></button>
         <button onclick="" id="bandedSideWalkContinue"><i class="fa-solid fa-angle-right"></i></button>
         <button onclick="" id="gobletSquatContinue"><i class="fa-solid fa-angle-right"></i></button>
@@ -70,44 +71,71 @@
     </div>
     <div class="workout-stage">
       <span id="warmup-stage">WARMUP</span>
-      <!-- <span id="exercise-stage">EXERCISE</span>
-      <span id="cool-down-stage">COOL DOWN</span> -->
+      <span id="exercise-stage">EXERCISE</span>
+      <span id="cool-down-stage">COOL DOWN</span>
     </div>
     <div class="workout">
-      <div class="workout-item">
+      <div class="workout-item" id="jumpRopeItem">
         <div class="workout-item-header">
           <h1>Jump Rope</h1>
           <div class="timer-workout-item-div"><h3><span class="timer-workout-item" id="jumpRopeTimer">02:00</span></h3><button class="timer-workout-item-button" onclick="startjumpRopeTimer()"><i class="fa-solid fa-play"></i></button></div>
         </div>
       </div>
+      <div class="workout-item" id="SitUpItem">
+        <div class="workout-item-header">
+          <h1>Sit Ups</h1>
+          <h3>3 x 15</h3>
+        </div>
+      </div>
+      <div class="workout-item" id="bandedSideWalkItem">
+        <div class="workout-item-header">
+          <h1>Banded Side Walk</h1>
+          <h3>3 x 6</h3>
+        </div>
+      </div>
+      <div class="workout-item" id="gobletSquatItem">
+        <div class="workout-item-header">
+          <h1>Goblet Squats</h1>
+          <h3>3 x 10 : 25lbs</h3>
+        </div>
+      </div>
+      <div class="workout-item" id="pushupItem">
+        <div class="workout-item-header">
+          <h1>Push Ups</h1>
+          <h3>3 x AMRAP <i class="fa-regular fa-circle-question" title="AMRAP stands for As Many Rounds As Possible"></i></h3>
+        </div>
+      </div>
+      <div class="workout-item" id="weightedCrossoverLungesItem">
+        <div class="workout-item-header">
+          <h1>Weighted Crossover Lunges</h1>
+          <h3>3 x 10 Each Side : 10lbs</h3>
+        </div>
+      </div>
+      <div class="workout-item" id="pullupItem">
+        <div class="workout-item-header">
+          <h1>Pull Ups</h1>
+          <h3>3 x AMRAP <i class="fa-regular fa-circle-question" title="AMRAP stands for As Many Rounds As Possible"></i></h3>
+        </div>
+      </div>
+      <div class="workout-item" id="gluteBridgesItem">
+        <div class="workout-item-header">
+          <h1>Glute Bridges</h1>
+          <h3>3 x 20</h3>
+        </div>
+      </div>
+      <div class="workout-item" id="splitSquatItem">
+        <div class="workout-item-header">
+          <h1>Split Squat Jumps</h1>
+          <h3>50</h3>
+        </div>
+      </div>
+      <div class="workout-item" id="plankItem">
+        <div class="workout-item-header">
+          <h1>Plank</h1>
+          <div class="timer-workout-item-div"><h3><span class="timer-workout-item" id="plankTimer">02:00</span></h3><button class="timer-workout-item-button" onclick="startPlankTimer()"><i class="fa-solid fa-play"></i></button></div>
+        </div>
+      </div>
     </div>
-    <script>
-      function test(){
-        document.getElementById('jumpRopeProgress').classList.add('past');
-      }
-      function test2(){
-        document.getElementById('jumpRopeProgress').classList.remove('past');
-        document.getElementById('jumpRopeProgress').classList.add('active');
-      }
-      function startjumpRopeTimer() {
-        var duration = 2 * 60; // 2 minutes in seconds
-        var display = document.getElementById('jumpRopeTimer');
-
-        var jumpRopeTimer = duration, minutes, seconds;
-        setInterval(function () {
-          minutes = parseInt(jumpRopeTimer / 60, 10);
-          seconds = parseInt(jumpRopeTimer % 60, 10);
-
-          minutes = minutes < 10 ? "0" + minutes : minutes;
-          seconds = seconds < 10 ? "0" + seconds : seconds;
-
-          display.textContent = minutes + ":" + seconds;
-
-          if (--jumpRopeTimer < 0) {
-            document.getElementById('jumpRopeTimer').innerHTML = '00:00';
-          }
-        }, 1000);
-      }
-    </script>
+    <script src="java/workoutA.js"></script>
   </body>
 </html>
