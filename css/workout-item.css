@@ -58,6 +58,7 @@
   overflow-x: scroll;
   border: 2px solid #fff;
   border: 5px solid transparent;
+  margin: 0 20px 0 20px;
 }
 
 .advancment-button {
@@ -92,14 +93,13 @@
 }
 
 .workout-item-header {
-  text-align: center;
   margin: 3rem;
   color: #fff;
-  margin-top: 16%;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
+  height: 72vh;
 }
 
 .workout-item-header h1{
@@ -118,6 +118,7 @@
   width: 3rem;
   border: none;
   border-radius: 100%;
+  cursor: pointer;
 }
 
 .timer-workout-item-button i {
@@ -130,6 +131,18 @@
   justify-content: center;
   align-items: center;
   gap: 20px;
+ }
+
+ .workout-stage {
+  writing-mode: vertical-lr;
+  text-orientation: upright;
+  color: #fff;
+  font-size: 2.5rem;
+  font-weight: 400;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding-left: 20px;
  }
 
  @media screen and (max-width: 800px) {
@@ -150,12 +163,30 @@
     margin: 0px;
     border-radius: 100%;
   }
-
-  .workout-item-header {
-    margin-top: 55%;
-  }
   
   .workout-item-header h1 {
     font-size: 4rem;
+  }
+  
+  .workout-stage {
+    writing-mode: horizontal-tb;
+    text-orientation: upright;
+    color: #fff;
+    font-size: 2.5rem;
+    font-weight: 400;
+    text-align: center;
+    top: 0;
+    left: 50%;
+    transform: translateX(-55%);
+   }
+
+  .workout-item-header {
+    margin: 3rem;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 72vh;
   }
  }
