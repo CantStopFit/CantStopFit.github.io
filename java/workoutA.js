@@ -20,23 +20,45 @@ function situp() {
     //Item Removal/Addition
     document.getElementById('SitUpItem').style.display = "flex";
     document.getElementById('jumpRopeItem').style.display = "none";
-    document.getElementById('bandedSideWalkItem').style.display = "none"
+    document.getElementById('bandedSideWalkItem').style.display = "none";
     //Progress Bar
     document.getElementById('jumpRopeProgress').classList.remove('active');
     document.getElementById('jumpRopeProgress').classList.add('past');
     document.getElementById('situpProgress').classList.add('active');
+    document.getElementById('situpProgress').classList.remove('past');
+    document.getElementById('bandedSideWalkProgress').classList.remove('active');
     //Advancement Bar
     document.getElementById('situpAdvancement').classList.add('active-btn');
-    document.getElementById('jumpRopeAdvancement').classList.remove('active-btn')
+    document.getElementById('jumpRopeAdvancement').classList.remove('active-btn');
+    document.getElementById('bandedSideWalkAdvancement').classList.remove('active-btn');
     //Back Buttons
     document.getElementById('situpBack').style.display = "block";
-    document.getElementById('fakeBack').style.display = "none"
+    document.getElementById('fakeBack').style.display = "none";
+    document.getElementById('bandedSideWalkback').style.display = "none";
     //Forward Buttons
     document.getElementById('jumpRopeContinue').style.display = "none";
     document.getElementById('situpContinue').style.display = "block";
+    document.getElementById('bandedSideWalkContinue').style.display = "none";
 }
 function bandedSideWalk() {
-
+  //Item Removal/Addition
+  document.getElementById('SitUpItem').style.display = "none";
+  document.getElementById('gobletSquatItem').style.display = "none";
+  document.getElementById('bandedSideWalkItem').style.display = "flex"
+  //Progress Bar
+  document.getElementById('situpProgress').classList.remove('active');
+  document.getElementById('situpProgress').classList.add('past');
+  document.getElementById('bandedSideWalkProgress').classList.add('active');
+  //Advancement Bar
+  document.getElementById('situpAdvancement').classList.remove('active-btn');
+  document.getElementById('gobletSquatAdvancement').classList.remove('active-btn');
+  document.getElementById('bandedSideWalkAdvancement').classList.add('active-btn');
+  //Back Buttons
+  document.getElementById('situpBack').style.display = "none";
+  document.getElementById('bandedSideWalkback').style.display = "block"
+  //Forward Buttons
+  document.getElementById('bandedSideWalkContinue').style.display = "block";
+  document.getElementById('situpContinue').style.display = "none";
 }
       function startjumpRopeTimer() {
         var duration = 2 * 60; // 2 minutes in seconds
