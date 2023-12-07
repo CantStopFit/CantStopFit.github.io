@@ -35,8 +35,8 @@
     <div class="workout-advancment">
       <div class="next-buttons prev-buttons">
         <button id="fakeBack"><i class="fa-solid fa-angle-left"></i></button>
-        <button onclick="" id="situpBack"><i class="fa-solid fa-angle-left"></i></button>
-        <button onclick="" id="bandedSideWalkback"><i class="fa-solid fa-angle-left"></i></button>
+        <button onclick="jumpRope()" id="situpBack"><i class="fa-solid fa-angle-left"></i></button>
+        <button onclick="situp()" id="bandedSideWalkback"><i class="fa-solid fa-angle-left"></i></button>
         <button onclick="" id="gobletSquatBack"><i class="fa-solid fa-angle-left"></i></button>
         <button onclick="" id="pushupBack"><i class="fa-solid fa-angle-left"></i></button>
         <button onclick="" id="weightedCrossoverLungesBack"><i class="fa-solid fa-angle-left"></i></button>
@@ -46,9 +46,9 @@
         <button onclick="" id="plankBack"><i class="fa-solid fa-angle-left"></i></button>
       </div>
       <div class="advancment-bar">
-        <button class="advancment-button active-btn" onclick="" id="jumpRopeAdvancement">Jump Rope</button>
-        <button class="advancment-button" onclick="" id="situpAdvancement">Sit Ups</button>
-        <button class="advancment-button" onclick="">Banded Side Walk</button>
+        <button class="advancment-button active-btn" onclick="jumpRope()" id="jumpRopeAdvancement">Jump Rope</button>
+        <button class="advancment-button" onclick="situp()" id="situpAdvancement">Sit Ups</button>
+        <button class="advancment-button" onclick="bandedSideWalk()">Banded Side Walk</button>
         <button class="advancment-button" onclick="">Goblet Squats</button>
         <button class="advancment-button" onclick="">Push Ups</button>
         <button class="advancment-button" onclick="">Weighted Crossover Lunges</button>
@@ -59,7 +59,7 @@
       </div>
       <div class="next-buttons fwd-buttons">
         <button onclick="situp()" id="jumpRopeContinue"><i class="fa-solid fa-angle-right"></i></button>
-        <button onclick="" id="situpContinue"><i class="fa-solid fa-angle-right"></i></button>
+        <button onclick="bandedSideWalk()" id="situpContinue"><i class="fa-solid fa-angle-right"></i></button>
         <button onclick="" id="bandedSideWalkContinue"><i class="fa-solid fa-angle-right"></i></button>
         <button onclick="" id="gobletSquatContinue"><i class="fa-solid fa-angle-right"></i></button>
         <button onclick="" id="pushupContinue"><i class="fa-solid fa-angle-right"></i></button>

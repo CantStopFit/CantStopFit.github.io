@@ -1,3 +1,21 @@
+function jumpRope() {
+  //Item Removal/Addition
+  document.getElementById('SitUpItem').style.display = "none";
+  document.getElementById('jumpRopeItem').style.display = "flex";
+  //Progress Bar
+  document.getElementById('jumpRopeProgress').classList.add('active');
+  document.getElementById('jumpRopeProgress').classList.remove('past');
+  document.getElementById('situpProgress').classList.remove('active');
+  //Advancement Bar
+  document.getElementById('situpAdvancement').classList.remove('active-btn');
+  document.getElementById('jumpRopeAdvancement').classList.add('active-btn');
+  //Back Buttons
+  document.getElementById('situpBack').style.display = "none";
+  document.getElementById('fakeBack').style.display = "block"
+  //Forward Buttons
+  document.getElementById('jumpRopeContinue').style.display = "block";
+  document.getElementById('situpContinue').style.display = "none";
+}
 function situp() {
     //Item Removal/Addition
     document.getElementById('SitUpItem').style.display = "flex";
@@ -17,14 +35,9 @@ function situp() {
     document.getElementById('jumpRopeContinue').style.display = "none";
     document.getElementById('situpContinue').style.display = "block";
 }
-// function test(){
-      //   document.getElementById('jumpRopeProgress').classList.add('past');
-      // }
-      // function test2(){
-      //   document.getElementById('jumpRopeProgress').classList.remove('past');
-      //   document.getElementById('jumpRopeProgress').classList.add('active');
-      // }
-      //Jump Rope Timer
+function bandedSideWalk() {
+
+}
       function startjumpRopeTimer() {
         var duration = 2 * 60; // 2 minutes in seconds
         var display = document.getElementById('jumpRopeTimer');
