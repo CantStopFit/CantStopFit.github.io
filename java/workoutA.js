@@ -118,6 +118,105 @@ function pushups() {
   document.getElementById('gobletSquatContinue').style.display = "none";
   document.getElementById('weightedCrossoverLungesContinue').style.display = "none";
 }
+function weightedCrossoverLunge() {
+  //Item Removal/Addition
+  document.getElementById('pushupItem').style.display = "none";
+  document.getElementById('pullupItem').style.display = "none";
+  document.getElementById('weightedCrossoverLungesItem').style.display = "flex"
+  //Progress Bar
+  document.getElementById('pushUpsProgress').classList.remove('active');
+  document.getElementById('pushUpsProgress').classList.add('past');
+  document.getElementById('weightedCrossoverLungesProgress').classList.add('active');
+  document.getElementById('weightedCrossoverLungesProgress').classList.remove('past');
+  document.getElementById('pullUpsProgress').classList.remove('active');
+  //Advancement Bar
+  document.getElementById('pushUpAdvancement').classList.remove('active-btn');
+  document.getElementById('pullupsAdvancement').classList.remove('active-btn');
+  document.getElementById('weightedCrossoverLungesAdvancement').classList.add('active-btn');
+  //Back Buttons
+  document.getElementById('pullupBack').style.display = "none";
+  document.getElementById('pushupBack').style.display = "none";
+  document.getElementById('weightedCrossoverLungesBack').style.display = "block";
+  //Forward Buttons
+  document.getElementById('pushupContinue').style.display = "none";
+  document.getElementById('pullupContinue').style.display = "none";
+  document.getElementById('weightedCrossoverLungesContinue').style.display = "block";
+}
+function pullups() {
+  //Item Removal/Addition
+  document.getElementById('gluteBridgesItem').style.display = "none";
+  document.getElementById('pullupItem').style.display = "flex";
+  document.getElementById('weightedCrossoverLungesItem').style.display = "none"
+  //Progress Bar
+  document.getElementById('weightedCrossoverLungesProgress').classList.remove('active');
+  document.getElementById('weightedCrossoverLungesProgress').classList.add('past');
+  document.getElementById('pullUpsProgress').classList.add('active');
+  document.getElementById('pullUpsProgress').classList.remove('past');
+  document.getElementById('gluteBridgesProgress').classList.remove('active');
+  //Advancement Bar
+  document.getElementById('gluteBridgesAdvancement').classList.remove('active-btn');
+  document.getElementById('pullupsAdvancement').classList.add('active-btn');
+  document.getElementById('weightedCrossoverLungesAdvancement').classList.remove('active-btn');
+  //Back Buttons
+  document.getElementById('pullupBack').style.display = "block";
+  document.getElementById('gluteBridgesBack').style.display = "none";
+  document.getElementById('weightedCrossoverLungesBack').style.display = "none";
+  //Forward Buttons
+  document.getElementById('gluteBridgesContinue').style.display = "none";
+  document.getElementById('pullupContinue').style.display = "block";
+  document.getElementById('weightedCrossoverLungesContinue').style.display = "none";
+}
+function gluteBridge() {
+  //Item Removal/Addition
+  document.getElementById('gluteBridgesItem').style.display = "flex";
+  document.getElementById('pullupItem').style.display = "none";
+  document.getElementById('splitSquatItem').style.display = "none"
+  //Progress Bar
+  document.getElementById('pullUpsProgress').classList.remove('active');
+  document.getElementById('pullUpsProgress').classList.add('past');
+  document.getElementById('gluteBridgesProgress').classList.add('active');
+  document.getElementById('gluteBridgesProgress').classList.remove('past');
+  document.getElementById('splitSquatsProgress').classList.remove('active');
+  //Advancement Bar
+  document.getElementById('gluteBridgesAdvancement').classList.add('active-btn');
+  document.getElementById('pullupsAdvancement').classList.remove('active-btn');
+  document.getElementById('splitSquatAdvancement').classList.remove('active-btn');
+  //Back Buttons
+  document.getElementById('pullupBack').style.display = "none";
+  document.getElementById('gluteBridgesBack').style.display = "block";
+  document.getElementById('splitSquatBack').style.display = "none";
+  //Forward Buttons
+  document.getElementById('gluteBridgesContinue').style.display = "block";
+  document.getElementById('pullupContinue').style.display = "none";
+  document.getElementById('splitSquatContinue').style.display = "none";
+}
+function splitSquat() {
+  //Item Removal/Addition
+  document.getElementById('gluteBridgesItem').style.display = "none";
+  document.getElementById('plankItem').style.display = "none";
+  document.getElementById('splitSquatItem').style.display = "flex"
+
+  //Left Off Finish Below:
+
+  //Progress Bar
+  document.getElementById('pullUpsProgress').classList.remove('active');
+  document.getElementById('pullUpsProgress').classList.add('past');
+  document.getElementById('gluteBridgesProgress').classList.add('active');
+  document.getElementById('gluteBridgesProgress').classList.remove('past');
+  document.getElementById('splitSquatsProgress').classList.remove('active');
+  //Advancement Bar
+  document.getElementById('gluteBridgesAdvancement').classList.add('active-btn');
+  document.getElementById('pullupsAdvancement').classList.remove('active-btn');
+  document.getElementById('splitSquatAdvancement').classList.remove('active-btn');
+  //Back Buttons
+  document.getElementById('pullupBack').style.display = "none";
+  document.getElementById('gluteBridgesBack').style.display = "block";
+  document.getElementById('splitSquatBack').style.display = "none";
+  //Forward Buttons
+  document.getElementById('gluteBridgesContinue').style.display = "block";
+  document.getElementById('pullupContinue').style.display = "none";
+  document.getElementById('splitSquatContinue').style.display = "none";
+}
       function startjumpRopeTimer() {
         var duration = 2 * 60; // 2 minutes in seconds
         var display = document.getElementById('jumpRopeTimer');
