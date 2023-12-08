@@ -30,6 +30,7 @@
             <span class="progress" id="gluteBridgesProgress"></span>
             <span class="progress" id="splitSquatsProgress"></span>
             <span class="progress" id="plankProgress"></span>
+            <span class="workout-stopwatch"><label id="minutes">00</label><span class="workout-stopwatch-no-colon">:</span><label id="seconds">00</label></span>
         </div>
     </div>
     <div class="workout-advancment">
@@ -66,13 +67,14 @@
         <button onclick="pullups()" id="weightedCrossoverLungesContinue"><i class="fa-solid fa-angle-right"></i></button>
         <button onclick="gluteBridge()" id="pullupContinue"><i class="fa-solid fa-angle-right"></i></button>
         <button onclick="splitSquat()" id="gluteBridgesContinue"><i class="fa-solid fa-angle-right"></i></button>
-        <button onclick="" id="splitSquatContinue"><i class="fa-solid fa-angle-right"></i></button>
+        <button onclick="plank()" id="splitSquatContinue"><i class="fa-solid fa-angle-right"></i></button>
+        <button onclick="finishedWorkoutA()" id="finishedWorkoutA"><i class="fa-solid fa-check"></i></button>
       </div>
     </div>
     <div class="workout-stage">
       <span id="warmup-stage">WARMUP</span>
       <span id="exercise-stage">EXERCISE</span>
-      <span id="cool-down-stage">COOL DOWN</span>
+      <span id="cool-down-stage">COOLDOWN</span>
     </div>
     <div class="workout">
       <div class="workout-item" id="jumpRopeItem">

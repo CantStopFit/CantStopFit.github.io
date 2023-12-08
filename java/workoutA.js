@@ -195,27 +195,69 @@ function splitSquat() {
   document.getElementById('gluteBridgesItem').style.display = "none";
   document.getElementById('plankItem').style.display = "none";
   document.getElementById('splitSquatItem').style.display = "flex"
-
-  //Left Off Finish Below:
-
   //Progress Bar
-  document.getElementById('pullUpsProgress').classList.remove('active');
-  document.getElementById('pullUpsProgress').classList.add('past');
-  document.getElementById('gluteBridgesProgress').classList.add('active');
-  document.getElementById('gluteBridgesProgress').classList.remove('past');
-  document.getElementById('splitSquatsProgress').classList.remove('active');
+  document.getElementById('gluteBridgesProgress').classList.remove('active');
+  document.getElementById('gluteBridgesProgress').classList.add('past');
+  document.getElementById('splitSquatsProgress').classList.add('active');
+  document.getElementById('splitSquatsProgress').classList.remove('past');
+  document.getElementById('plankProgress').classList.remove('active');
   //Advancement Bar
-  document.getElementById('gluteBridgesAdvancement').classList.add('active-btn');
-  document.getElementById('pullupsAdvancement').classList.remove('active-btn');
-  document.getElementById('splitSquatAdvancement').classList.remove('active-btn');
+  document.getElementById('gluteBridgesAdvancement').classList.remove('active-btn');
+  document.getElementById('plankAdvancement').classList.remove('active-btn');
+  document.getElementById('splitSquatAdvancement').classList.add('active-btn');
   //Back Buttons
-  document.getElementById('pullupBack').style.display = "none";
-  document.getElementById('gluteBridgesBack').style.display = "block";
+  document.getElementById('plankBack').style.display = "none";
+  document.getElementById('gluteBridgesBack').style.display = "none";
+  document.getElementById('splitSquatBack').style.display = "block";
+  //Forward Buttons
+  document.getElementById('splitSquatContinue').style.display = "block";
+  document.getElementById('gluteBridgesContinue').style.display = "none";
+  document.getElementById('finishedWorkoutA').style.display = "none";
+  //Stage
+  document.getElementById('exercise-stage').style.display = "block";
+  document.getElementById('cool-down-stage').style.display = "none";
+}
+function plank() {
+  //Item Removal/Addition
+  document.getElementById('plankItem').style.display = "flex";
+  document.getElementById('splitSquatItem').style.display = "none"
+  //Progress Bar
+  document.getElementById('splitSquatsProgress').classList.remove('active');
+  document.getElementById('splitSquatsProgress').classList.add('past');
+  document.getElementById('plankProgress').classList.add('active');
+  document.getElementById('plankProgress').classList.remove('past');
+  //Advancement Bar
+  document.getElementById('splitSquatAdvancement').classList.remove('active-btn');
+  document.getElementById('plankAdvancement').classList.add('active-btn');
+  //Back Buttons
+  document.getElementById('plankBack').style.display = "block";
   document.getElementById('splitSquatBack').style.display = "none";
   //Forward Buttons
-  document.getElementById('gluteBridgesContinue').style.display = "block";
-  document.getElementById('pullupContinue').style.display = "none";
   document.getElementById('splitSquatContinue').style.display = "none";
+  document.getElementById('finishedWorkoutA').style.display = "block";
+  //Stage
+  document.getElementById('exercise-stage').style.display = "none";
+  document.getElementById('cool-down-stage').style.display = "block";
+}
+//Workout Stopwatch
+var minutesLabel = document.getElementById("minutes");
+var secondsLabel = document.getElementById("seconds");
+var totalSeconds = 0;
+setInterval(setTime, 1000);
+
+function setTime() {
+  ++totalSeconds;
+  secondsLabel.innerHTML = pad(totalSeconds % 60);
+  minutesLabel.innerHTML = pad(parseInt(totalSeconds / 60));
+}
+
+function pad(val) {
+  var valString = val + "";
+  if (valString.length < 2) {
+    return "0" + valString;
+  } else {
+    return valString;
+  }
 }
       function startjumpRopeTimer() {
         var duration = 2 * 60; // 2 minutes in seconds

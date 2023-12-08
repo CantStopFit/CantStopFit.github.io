@@ -150,6 +150,56 @@
   padding-left: 20px;
  }
 
+ .next-buttons button{
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 2rem;
+  margin: 0 5px;
+  cursor: pointer;
+ }
+
+ #fakeBack {
+  color: grey;
+ }
+
+ #situpContinue,
+ #bandedSideWalkContinue,
+ #gobletSquatContinue,
+ #pushupContinue,
+ #weightedCrossoverLungesContinue,
+ #pullupContinue,
+ #gluteBridgesContinue,
+ #splitSquatContinue,
+ #situpBack,
+ #bandedSideWalkback,
+ #gobletSquatBack,
+ #pushupBack,
+ #weightedCrossoverLungesBack,
+ #pullupBack,
+ #gluteBridgesBack,
+ #splitSquatBack,
+ #plankBack,
+ #SitUpItem,
+ #bandedSideWalkItem,
+ #gobletSquatItem,
+ #pushupItem,
+ #weightedCrossoverLungesItem,
+ #pullupItem,
+ #gluteBridgesItem,
+ #splitSquatItem,
+ #plankItem,
+ #exercise-stage,
+ #cool-down-stage,
+ #finishedWorkoutA {
+  display: none;
+ }
+
+ .workout-stopwatch {
+  font-size: 1.4rem;
+  color: #fff;
+ }
+
  @media screen and (max-width: 800px) {
   .progress-bar {
     display: flex;
@@ -194,48 +244,11 @@
     justify-content: center;
     height: 72vh;
   }
- }
-
- .next-buttons button{
-  background: none;
-  border: none;
-  color: #fff;
-  font-size: 2rem;
-  margin: 0 5px;
-  cursor: pointer;
- }
-
- #fakeBack {
-  color: grey;
- }
-
- #situpContinue,
- #bandedSideWalkContinue,
- #gobletSquatContinue,
- #pushupContinue,
- #weightedCrossoverLungesContinue,
- #pullupContinue,
- #gluteBridgesContinue,
- #splitSquatContinue,
- #situpBack,
- #bandedSideWalkback,
- #gobletSquatBack,
- #pushupBack,
- #weightedCrossoverLungesBack,
- #pullupBack,
- #gluteBridgesBack,
- #splitSquatBack,
- #plankBack,
- #SitUpItem,
- #bandedSideWalkItem,
- #gobletSquatItem,
- #pushupItem,
- #weightedCrossoverLungesItem,
- #pullupItem,
- #gluteBridgesItem,
- #splitSquatItem,
- #plankItem,
- #exercise-stage,
- #cool-down-stage {
-  display: none;
+  .workout-stopwatch {
+    display: flex;
+    flex-direction: column;
+  }
+  .workout-stopwatch-no-colon {
+    display: none;
+  }
  }
