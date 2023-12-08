@@ -107,6 +107,18 @@
   text-align: center;
 }
 
+.weightedCrossoverLungesItemHeader {
+  text-align: center;
+}
+
+.weightedCrossoverLungesItemHeader h1 {
+  font-size: 5rem;
+}
+
+.weightedCrossoverLungesItemHeader h3 {
+  font-size: 2.5rem;
+}
+
 .workout-item-header h1{
   font-size: 5rem;
 }
@@ -200,7 +212,8 @@
   color: #fff;
  }
 
- @media screen and (max-width: 800px) {
+
+ @media screen and (max-width: 850px) {
   .progress-bar {
     display: flex;
     flex-direction: column;
@@ -250,5 +263,12 @@
   }
   .workout-stopwatch-no-colon {
     display: none;
+  }
+  .weightedCrossoverLungesItemHeader h1{
+    font-size: 3rem;
+  }
+  
+  .weightedCrossoverLungesItemHeader h3 {
+    font-size: 1rem;
   }
  }
