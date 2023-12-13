@@ -152,3 +152,72 @@ main img{
     min-height: 150px;
   }
 }
+
+.workout-intro-section h1 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.workout-choice-cards {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cards-list {
+  display: flex;
+  padding: 1rem;
+  @media(min-width: 40rem) {
+    width: 50%;
+  }
+  @media(min-width: 56rem) {
+    width: 33.3333%;
+  }
+}
+
+.workout-card {
+  background-color: white;
+  border-radius: 0.25rem;
+  box-shadow: 0 10px 40px -14px rgba(0,0,0,0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: all 0.2s ease;
+  border-top: 6px solid transparent;
+}
+
+#workout-card-1:hover {
+  border-top: 6px solid green;
+}
+
+#workout-card-2:hover {
+  border-top: 6px solid red;
+}
+
+#workout-card-3:hover {
+  border-top: 6px solid blue;
+}
+
+.workout-card-content {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.workout-card-title {
+  color: #272727;
+  font-size: 1.25rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.workout-card-text {
+  flex: 1 1 auto;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;
+}
