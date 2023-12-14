@@ -189,15 +189,15 @@ main img{
 }
 
 #workout-card-1:hover {
-  border-top: 6px solid green;
+  border-top: 6px solid #666666;
 }
 
 #workout-card-2:hover {
-  border-top: 6px solid red;
+  border-top: 6px solid #272727;
 }
 
 #workout-card-3:hover {
-  border-top: 6px solid blue;
+  border-top: 6px solid #464646;
 }
 
 .workout-card-content {
