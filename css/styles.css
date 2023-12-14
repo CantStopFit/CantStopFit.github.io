@@ -221,3 +221,47 @@ main img{
   line-height: 1.5;
   margin-bottom: 1.25rem;
 }
+
+.pull-section {
+  height: 50vh;
+  background-color: #464646;
+  font-size: 2rem;
+  display: grid;
+  place-content: center;
+  padding: 4rem;
+  transition: all 0.2s ease-in;
+}
+
+.pull-section:hover {
+  background-color: #fff;
+}
+
+.pull-section:hover h1 {
+  color: #464646;
+}
+
+
+/* DEMO-SPECIFIC STYLES */
+.pull-section h1 {
+  color: #fff;
+  font-family: monospace;
+  overflow: hidden;
+  border-right: .15em solid #fff;
+  white-space: nowrap; 
+  margin: 0 auto; 
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #fff }
+}
