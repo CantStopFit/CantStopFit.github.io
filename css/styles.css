@@ -266,3 +266,9 @@ main img{
   from, to { border-color: transparent }
   50% { border-color: #fff }
 }
+
+.recommended-equipment {
+  width: 100%;
+  height: 40vh;
+  background: #bbbbbb;
+}
