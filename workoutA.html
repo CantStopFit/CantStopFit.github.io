@@ -22,7 +22,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <title>Pulse Peak Elite</title>
+    <title>Workout A</title>
     <link rel="icon" type="image/x-icon" href="/imgs/favicon.ico" />
     <script src="java/include.js"></script>
   </head>
@@ -45,15 +45,15 @@
     <div class="workout-advancment">
       <div class="next-buttons prev-buttons">
         <button id="fakeBack"><i class="fa-solid fa-angle-left"></i></button>
-        <button onclick="jumpRope()" id="back-btn-1"><i class="fa-solid fa-angle-left"></i></button>
-        <button onclick="situp()" id="back-btn-2"><i class="fa-solid fa-angle-left"></i></button>
-        <button onclick="bandedSideWalk()" id="back-btn-3"><i class="fa-solid fa-angle-left"></i></button>
-        <button onclick="gobletSquat()" id="back-btn-4"><i class="fa-solid fa-angle-left"></i></button>
-        <button onclick="pushups()" id="back-btn-5"><i class="fa-solid fa-angle-left"></i></button>
-        <button onclick="weightedCrossoverLunge()" id="back-btn-6"><i class="fa-solid fa-angle-left"></i></button>
-        <button onclick="pullups()" id="back-btn-7"><i class="fa-solid fa-angle-left"></i></button>
-        <button onclick="gluteBridge()" id="back-btn-8"><i class="fa-solid fa-angle-left"></i></button>
-        <button onclick="splitSquat()" id="back-btn-9"><i class="fa-solid fa-angle-left"></i></button>
+        <button onclick="gotoWorkoutActivity1()" id="back-btn-1"><i class="fa-solid fa-angle-left"></i></button>
+        <button onclick="gotoWorkoutActivity2()" id="back-btn-2"><i class="fa-solid fa-angle-left"></i></button>
+        <button onclick="gotoWorkoutActivity3()" id="back-btn-3"><i class="fa-solid fa-angle-left"></i></button>
+        <button onclick="gotoWorkoutActivity4()" id="back-btn-4"><i class="fa-solid fa-angle-left"></i></button>
+        <button onclick="gotoWorkoutActivity5()" id="back-btn-5"><i class="fa-solid fa-angle-left"></i></button>
+        <button onclick="gotoWorkoutActivity6()" id="back-btn-6"><i class="fa-solid fa-angle-left"></i></button>
+        <button onclick="gotoWorkoutActivity7()" id="back-btn-7"><i class="fa-solid fa-angle-left"></i></button>
+        <button onclick="gotoWorkoutActivity8()" id="back-btn-8"><i class="fa-solid fa-angle-left"></i></button>
+        <button onclick="gotoWorkoutActivity9()" id="back-btn-9"><i class="fa-solid fa-angle-left"></i></button>
       </div>
       <div class="advancment-bar">
         <button class="advancment-button active-btn" id="advance-bar-1">Jump Rope</button>
@@ -68,15 +68,15 @@
         <button class="advancment-button" id="advance-bar-10">Plank</button>
       </div>
       <div class="next-buttons fwd-buttons">
-        <button onclick="situp()" id="continue-btn-1"><i class="fa-solid fa-angle-right"></i></button>
-        <button onclick="bandedSideWalk()" id="continue-btn-2"><i class="fa-solid fa-angle-right"></i></button>
-        <button onclick="gobletSquat()" id="continue-btn-3"><i class="fa-solid fa-angle-right"></i></button>
-        <button onclick="pushups()" id="continue-btn-4"><i class="fa-solid fa-angle-right"></i></button>
-        <button onclick="weightedCrossoverLunge()" id="continue-btn-5"><i class="fa-solid fa-angle-right"></i></button>
-        <button onclick="pullups()" id="continue-btn-6"><i class="fa-solid fa-angle-right"></i></button>
-        <button onclick="gluteBridge()" id="continue-btn-7"><i class="fa-solid fa-angle-right"></i></button>
-        <button onclick="splitSquat()" id="continue-btn-8"><i class="fa-solid fa-angle-right"></i></button>
-        <button onclick="plank()" id="continue-btn-9"><i class="fa-solid fa-angle-right"></i></button>
+        <button onclick="gotoWorkoutActivity2()" id="continue-btn-1"><i class="fa-solid fa-angle-right"></i></button>
+        <button onclick="gotoWorkoutActivity3()" id="continue-btn-2"><i class="fa-solid fa-angle-right"></i></button>
+        <button onclick="gotoWorkoutActivity4()" id="continue-btn-3"><i class="fa-solid fa-angle-right"></i></button>
+        <button onclick="gotoWorkoutActivity5()" id="continue-btn-4"><i class="fa-solid fa-angle-right"></i></button>
+        <button onclick="gotoWorkoutActivity6()" id="continue-btn-5"><i class="fa-solid fa-angle-right"></i></button>
+        <button onclick="gotoWorkoutActivity7()" id="continue-btn-6"><i class="fa-solid fa-angle-right"></i></button>
+        <button onclick="gotoWorkoutActivity8()" id="continue-btn-7"><i class="fa-solid fa-angle-right"></i></button>
+        <button onclick="gotoWorkoutActivity9()" id="continue-btn-8"><i class="fa-solid fa-angle-right"></i></button>
+        <button onclick="gotoWorkoutActivity10()" id="continue-btn-9"><i class="fa-solid fa-angle-right"></i></button>
         <button onclick="finishedWorkout()" id="finishedWorkout"><i class="fa-solid fa-check"></i></button>
       </div>
     </div>
@@ -89,7 +89,7 @@
       <div class="workout-item" id="workout-activity-1">
         <div class="workout-item-header">
           <h1>Jump Rope</h1>
-          <div class="timer-workout-item-div"><h3><span class="timer-workout-item" id="jumpRopeTimer">02:00</span></h3><button class="timer-workout-item-button" onclick="startjumpRopeTimer()"><i class="fa-solid fa-play"></i></button></div>
+          <div class="timer-workout-item-div"><h3><span class="timer-workout-item" id="workoutTimer1">02:00</span></h3><button class="timer-workout-item-button" onclick="startworkoutTimer1()"><i class="fa-solid fa-play"></i></button></div>
         </div>
       </div>
       <div class="workout-item" id="workout-activity-2">
@@ -143,7 +143,7 @@
       <div class="workout-item" id="workout-activity-10">
         <div class="workout-item-header">
           <h1>Plank</h1>
-          <div class="timer-workout-item-div"><h3><span class="timer-workout-item" id="plankTimer">02:00</span></h3><button class="timer-workout-item-button" onclick="startPlankTimer()"><i class="fa-solid fa-play"></i></button></div>
+          <div class="timer-workout-item-div"><h3><span class="timer-workout-item" id="workoutTimer2">02:00</span></h3><button class="timer-workout-item-button" onclick="startworkoutTimer2()"><i class="fa-solid fa-play"></i></button></div>
         </div>
       </div>
     </div>

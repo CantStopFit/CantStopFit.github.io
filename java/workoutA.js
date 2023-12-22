@@ -1,4 +1,4 @@
-function jumpRope() {
+function gotoWorkoutActivity1() {
   //Item Removal/Addition
   document.getElementById('workout-activity-2').style.display = "none";
   document.getElementById('workout-activity-1').style.display = "flex";
@@ -16,7 +16,7 @@ function jumpRope() {
   document.getElementById('continue-btn-1').style.display = "block";
   document.getElementById('continue-btn-2').style.display = "none";
 }
-function situp() {
+function gotoWorkoutActivity2() {
     //Item Removal/Addition
     document.getElementById('workout-activity-2').style.display = "flex";
     document.getElementById('workout-activity-1').style.display = "none";
@@ -40,7 +40,7 @@ function situp() {
     document.getElementById('continue-btn-2').style.display = "block";
     document.getElementById('continue-btn-3').style.display = "none";
 }
-function bandedSideWalk() {
+function gotoWorkoutActivity3() {
   //Item Removal/Addition
   document.getElementById('workout-activity-2').style.display = "none";
   document.getElementById('workout-activity-4').style.display = "none";
@@ -67,7 +67,7 @@ function bandedSideWalk() {
   document.getElementById('exercise-stage').style.display = "none";
   document.getElementById('warmup-stage').style.display = "block";
 }
-function gobletSquat() {
+function gotoWorkoutActivity4() {
   //Item Removal/Addition
   document.getElementById('workout-activity-5').style.display = "none";
   document.getElementById('workout-activity-4').style.display = "flex";
@@ -94,7 +94,7 @@ function gobletSquat() {
   document.getElementById('exercise-stage').style.display = "block";
   document.getElementById('warmup-stage').style.display = "none";
 }
-function pushups() {
+function gotoWorkoutActivity5() {
   //Item Removal/Addition
   document.getElementById('workout-activity-5').style.display = "flex";
   document.getElementById('workout-activity-4').style.display = "none";
@@ -118,7 +118,7 @@ function pushups() {
   document.getElementById('continue-btn-4').style.display = "none";
   document.getElementById('continue-btn-6').style.display = "none";
 }
-function weightedCrossoverLunge() {
+function gotoWorkoutActivity6() {
   //Item Removal/Addition
   document.getElementById('workout-activity-5').style.display = "none";
   document.getElementById('workout-activity-7').style.display = "none";
@@ -142,7 +142,7 @@ function weightedCrossoverLunge() {
   document.getElementById('continue-btn-7').style.display = "none";
   document.getElementById('continue-btn-6').style.display = "block";
 }
-function pullups() {
+function gotoWorkoutActivity7() {
   //Item Removal/Addition
   document.getElementById('workout-activity-8').style.display = "none";
   document.getElementById('workout-activity-7').style.display = "flex";
@@ -166,7 +166,7 @@ function pullups() {
   document.getElementById('continue-btn-7').style.display = "block";
   document.getElementById('continue-btn-6').style.display = "none";
 }
-function gluteBridge() {
+function gotoWorkoutActivity8() {
   //Item Removal/Addition
   document.getElementById('workout-activity-8').style.display = "flex";
   document.getElementById('workout-activity-7').style.display = "none";
@@ -190,7 +190,7 @@ function gluteBridge() {
   document.getElementById('continue-btn-7').style.display = "none";
   document.getElementById('continue-btn-9').style.display = "none";
 }
-function splitSquat() {
+function gotoWorkoutActivity9() {
   //Item Removal/Addition
   document.getElementById('workout-activity-8').style.display = "none";
   document.getElementById('workout-activity-10').style.display = "none";
@@ -217,7 +217,7 @@ function splitSquat() {
   document.getElementById('exercise-stage').style.display = "block";
   document.getElementById('cool-down-stage').style.display = "none";
 }
-function plank() {
+function gotoWorkoutActivity10() {
   //Item Removal/Addition
   document.getElementById('workout-activity-10').style.display = "flex";
   document.getElementById('workout-activity-9').style.display = "none"
@@ -259,42 +259,42 @@ function pad(val) {
     return valString;
   }
 }
-      function startjumpRopeTimer() {
+      function startworkoutTimer1() {
         var duration = 2 * 60; // 2 minutes in seconds
-        var display = document.getElementById('jumpRopeTimer');
+        var display = document.getElementById('workoutTimer1');
 
-        var jumpRopeTimer = duration, minutes, seconds;
+        var workoutTimer1 = duration, minutes, seconds;
         setInterval(function () {
-          minutes = parseInt(jumpRopeTimer / 60, 10);
-          seconds = parseInt(jumpRopeTimer % 60, 10);
+          minutes = parseInt(workoutTimer1 / 60, 10);
+          seconds = parseInt(workoutTimer1 % 60, 10);
 
           minutes = minutes < 10 ? "0" + minutes : minutes;
           seconds = seconds < 10 ? "0" + seconds : seconds;
 
           display.textContent = minutes + ":" + seconds;
 
-          if (--jumpRopeTimer < 0) {
-            document.getElementById('jumpRopeTimer').innerHTML = '00:00';
+          if (--workoutTimer1 < 0) {
+            document.getElementById('workoutTimer1').innerHTML = '00:00';
           }
         }, 1000);
       }
       //Plank Timer
-      function startPlankTimer() {
+      function startworkoutTimer2() {
         var duration = 2 * 60; // 2 minutes in seconds
-        var display = document.getElementById('plankTimer');
+        var display = document.getElementById('workoutTimer2');
 
-        var plankTimer = duration, minutes, seconds;
+        var workoutTimer2 = duration, minutes, seconds;
         setInterval(function () {
-          minutes = parseInt(plankTimer / 60, 10);
-          seconds = parseInt(plankTimer % 60, 10);
+          minutes = parseInt(workoutTimer2 / 60, 10);
+          seconds = parseInt(workoutTimer2 % 60, 10);
 
           minutes = minutes < 10 ? "0" + minutes : minutes;
           seconds = seconds < 10 ? "0" + seconds : seconds;
 
           display.textContent = minutes + ":" + seconds;
 
-          if (--plankTimer < 0) {
-            document.getElementById('plankTimer').innerHTML = '00:00';
+          if (--workoutTimer2 < 0) {
+            document.getElementById('workoutTimer2').innerHTML = '00:00';
           }
         }, 1000);
       }
