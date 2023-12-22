@@ -239,6 +239,33 @@ function gotoWorkoutActivity10() {
   document.getElementById('exercise-stage').style.display = "none";
   document.getElementById('cool-down-stage').style.display = "block";
 }
+function finishedWorkout() {
+  //Progress Bar
+  document.getElementById('progress-item-1').classList.remove('past');
+  document.getElementById('progress-item-1').classList.add('finished');
+  document.getElementById('progress-item-2').classList.remove('past');
+  document.getElementById('progress-item-2').classList.add('finished');
+  document.getElementById('progress-item-3').classList.remove('past');
+  document.getElementById('progress-item-3').classList.add('finished');
+  document.getElementById('progress-item-4').classList.remove('past');
+  document.getElementById('progress-item-4').classList.add('finished');
+  document.getElementById('progress-item-5').classList.remove('past');
+  document.getElementById('progress-item-5').classList.add('finished');
+  document.getElementById('progress-item-6').classList.remove('past');
+  document.getElementById('progress-item-6').classList.add('finished');
+  document.getElementById('progress-item-7').classList.remove('past');
+  document.getElementById('progress-item-7').classList.add('finished');
+  document.getElementById('progress-item-8').classList.remove('past');
+  document.getElementById('progress-item-8').classList.add('finished');
+  document.getElementById('progress-item-9').classList.remove('past');
+  document.getElementById('progress-item-9').classList.add('finished');
+  document.getElementById('progress-item-10').classList.remove('past');
+  document.getElementById('progress-item-10').classList.add('finished');
+  //Check Icon
+  document.getElementById('finishedWorkout').style.color = "rgba(88, 255, 96, 0.8)";
+  //Back Icon
+  document.getElementById('back-btn-9').style.display = "none";  
+}
 //Workout Stopwatch
 var minutesLabel = document.getElementById("minutes");
 var secondsLabel = document.getElementById("seconds");

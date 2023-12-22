@@ -27,8 +27,9 @@
   box-shadow: 0 0 10px 2px rgba(34, 226, 255, 0.4);
 }
 
-.progress.future {
-  background-color: #808080;
+.progress.finished {
+  background-color: rgba(88, 255, 96, 0.8);
+  box-shadow: 0 0 10px 2px rgba(88, 255, 96, 0.8);
 }
 
 .progress.past {
@@ -183,6 +184,16 @@
  #continue-btn-7,
  #continue-btn-8,
  #continue-btn-9,
+ #continue-btn-10,
+ #continue-btn-11,
+ #continue-btn-12,
+ #continue-btn-13,
+ #continue-btn-14,
+ #continue-btn-15,
+ #continue-btn-16,
+ #continue-btn-17,
+ #continue-btn-18,
+ #continue-btn-19,
  #back-btn-1,
  #back-btn-2,
  #back-btn-3,
@@ -192,6 +203,15 @@
  #back-btn-7,
  #back-btn-8,
  #back-btn-9,
+ #back-btn-10,
+ #back-btn-11,
+ #back-btn-12,
+ #back-btn-13,
+ #back-btn-14,
+ #back-btn-15,
+ #back-btn-16,
+ #back-btn-17,
+ #back-btn-18,
  #workout-activity-2,
  #workout-activity-3,
  #workout-activity-4,
@@ -201,9 +221,21 @@
  #workout-activity-8,
  #workout-activity-9,
  #workout-activity-10,
+ #workout-activity-11,
+ #workout-activity-12,
+ #workout-activity-13,
+ #workout-activity-14,
+ #workout-activity-15,
+ #workout-activity-16,
+ #workout-activity-17,
+ #workout-activity-18,
+ #workout-activity-19,
  #exercise-stage,
  #cool-down-stage,
- #finishedWorkout {
+ #finishedWorkout,
+ #rd1,
+ #rd2,
+ #rd3 {
   display: none;
  }
 
@@ -212,6 +244,10 @@
   color: #fff;
  }
 
+ .progress-round {
+  font-size: 1.4rem;
+  color: #fff;
+ }
 
  @media screen and (max-width: 850px) {
   .progress-bar {

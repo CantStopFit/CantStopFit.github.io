@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4C48C8B8N1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-4C48C8B8N1');
+    </script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/workout-item.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Workout B</title>
+    <link rel="icon" type="image/x-icon" href="/imgs/favicon.ico" />
+    <script src="java/include.js"></script>
+  </head>
+  <body>
+    <div class="workout-progress">
+        <div class="progress-bar">
+            <span class="progress-round"><span id="rd1">x1</span><span id="rd2">x2</span><span id="rd3">x3</span></span>
+            <span class="progress active" id="progress-item-1"></span>
+            <span class="progress" id="progress-item-2"></span>
+            <span class="progress" id="progress-item-3"></span>
+            <span class="progress" id="progress-item-4"></span>
+            <span class="progress" id="progress-item-5"></span>
+            <span class="progress" id="progress-item-6"></span>
+            <span class="progress" id="progress-item-7"></span>
+            <span class="progress" id="progress-item-8"></span>
+            <span class="progress" id="progress-item-9"></span>
+            <span class="progress" id="progress-item-10"></span>
+            <span class="progress" id="progress-item-11"></span>
+            <span class="progress" id="progress-item-12"></span>
+            <span class="progress" id="progress-item-13"></span>
+            <span class="progress" id="progress-item-14"></span>
+            <span class="progress" id="progress-item-15"></span>
+            <span class="progress" id="progress-item-16"></span>
+            <span class="progress" id="progress-item-17"></span>
+            <span class="progress" id="progress-item-18"></span>
+            <span class="progress" id="progress-item-19"></span>
+            <span class="workout-stopwatch"><label id="minutes">00</label><span class="workout-stopwatch-no-colon">:</span><label id="seconds">00</label></span>
+        </div>
+    </div>
+    <div class="workout-advancment">
+      <div class="next-buttons prev-buttons">
+        <button id="fakeBack"><i class="fa-solid fa-angle-left"></i></button>
+        <button onclick="gotoWorkoutActivity1()" id="back-btn-1"><i class="fa-solid fa-angle-left"></i></button>
+        <button onclick="gotoWorkoutActivity2()" id="back-btn-2"><i class="fa-solid fa-angle-left"></i></button>
+        <button onclick="gotoWorkoutActivity3()" id="back-btn-3"><i class="fa-solid fa-angle-left"></i></button>
+        <button onclick="gotoWorkoutActivity4()" id="back-btn-4"><i class="fa-solid fa-angle-left"></i></button>
+        <button onclick="gotoWorkoutActivity5()" id="back-btn-5"><i class="fa-solid fa-angle-left"></i></button>
+        <button onclick="gotoWorkoutActivity6()" id="back-btn-6"><i class="fa-solid fa-angle-left"></i></button>
+        <button onclick="gotoWorkoutActivity7()" id="back-btn-7"><i class="fa-solid fa-angle-left"></i></button>
+        <button onclick="gotoWorkoutActivity8()" id="back-btn-8"><i class="fa-solid fa-angle-left"></i></button>
+        <button onclick="gotoWorkoutActivity9()" id="back-btn-9"><i class="fa-solid fa-angle-left"></i></button>
+        <button onclick="gotoWorkoutActivity10()" id="back-btn-10"><i class="fa-solid fa-angle-left"></i></button>
+        <button onclick="gotoWorkoutActivity11()" id="back-btn-11"><i class="fa-solid fa-angle-left"></i></button>
+        <button onclick="gotoWorkoutActivity12()" id="back-btn-12"><i class="fa-solid fa-angle-left"></i></button>
+        <button onclick="gotoWorkoutActivity13()" id="back-btn-13"><i class="fa-solid fa-angle-left"></i></button>
+        <button onclick="gotoWorkoutActivity14()" id="back-btn-14"><i class="fa-solid fa-angle-left"></i></button>
+        <button onclick="gotoWorkoutActivity15()" id="back-btn-15"><i class="fa-solid fa-angle-left"></i></button>
+        <button onclick="gotoWorkoutActivity16()" id="back-btn-16"><i class="fa-solid fa-angle-left"></i></button>
+        <button onclick="gotoWorkoutActivity17()" id="back-btn-17"><i class="fa-solid fa-angle-left"></i></button>
+        <button onclick="gotoWorkoutActivity18()" id="back-btn-18"><i class="fa-solid fa-angle-left"></i></button>
+      </div>
+      <div class="advancment-bar">
+        <button class="advancment-button active-btn" id="advance-bar-1">Jump Rope</button>
+        <button class="advancment-button" id="advance-bar-2">Walkout Pushups</button>
+        <button class="advancment-button" id="advance-bar-3">Squats</button>
+        <button class="advancment-button" id="advance-bar-4">Exercise Brief</button>
+        <button class="advancment-button" id="advance-bar-5">Double Pushup Lunge Twist</button>
+        <button class="advancment-button" id="advance-bar-6">Kettle Bell Swings</button>
+        <button class="advancment-button" id="advance-bar-7">Dead Bugs</button>
+        <button class="advancment-button" id="advance-bar-8">Thrusters</button>
+        <button class="advancment-button" id="advance-bar-9">Jammers</button>
+        <button class="advancment-button" id="advance-bar-10">Double Pushup Lunge Twist</button>
+        <button class="advancment-button" id="advance-bar-11">Kettle Bell Swings</button>
+        <button class="advancment-button" id="advance-bar-12">Dead Bugs</button>
+        <button class="advancment-button" id="advance-bar-13">Thrusters</button>
+        <button class="advancment-button" id="advance-bar-14">Jammers</button>
+        <button class="advancment-button" id="advance-bar-15">Double Pushup Lunge Twist</button>
+        <button class="advancment-button" id="advance-bar-16">Kettle Bell Swings</button>
+        <button class="advancment-button" id="advance-bar-17">Dead Bugs</button>
+        <button class="advancment-button" id="advance-bar-18">Thrusters</button>
+        <button class="advancment-button" id="advance-bar-19">Jammers</button>
+      </div>
+      <div class="next-buttons fwd-buttons">
+        <button onclick="gotoWorkoutActivity2()" id="continue-btn-1"><i class="fa-solid fa-angle-right"></i></button>
+        <button onclick="gotoWorkoutActivity3()" id="continue-btn-2"><i class="fa-solid fa-angle-right"></i></button>
+        <button onclick="gotoWorkoutActivity4()" id="continue-btn-3"><i class="fa-solid fa-angle-right"></i></button>
+        <button onclick="gotoWorkoutActivity5()" id="continue-btn-4"><i class="fa-solid fa-angle-right"></i></button>
+        <button onclick="gotoWorkoutActivity6()" id="continue-btn-5"><i class="fa-solid fa-angle-right"></i></button>
+        <button onclick="gotoWorkoutActivity7()" id="continue-btn-6"><i class="fa-solid fa-angle-right"></i></button>
+        <button onclick="gotoWorkoutActivity8()" id="continue-btn-7"><i class="fa-solid fa-angle-right"></i></button>
+        <button onclick="gotoWorkoutActivity9()" id="continue-btn-8"><i class="fa-solid fa-angle-right"></i></button>
+        <button onclick="gotoWorkoutActivity10()" id="continue-btn-9"><i class="fa-solid fa-angle-right"></i></button>
+        <button onclick="gotoWorkoutActivity11()" id="continue-btn-10"><i class="fa-solid fa-angle-right"></i></button>
+        <button onclick="gotoWorkoutActivity12()" id="continue-btn-11"><i class="fa-solid fa-angle-right"></i></button>
+        <button onclick="gotoWorkoutActivity13()" id="continue-btn-12"><i class="fa-solid fa-angle-right"></i></button>
+        <button onclick="gotoWorkoutActivity14()" id="continue-btn-13"><i class="fa-solid fa-angle-right"></i></button>
+        <button onclick="gotoWorkoutActivity15()" id="continue-btn-14"><i class="fa-solid fa-angle-right"></i></button>
+        <button onclick="gotoWorkoutActivity16()" id="continue-btn-15"><i class="fa-solid fa-angle-right"></i></button>
+        <button onclick="gotoWorkoutActivity17()" id="continue-btn-16"><i class="fa-solid fa-angle-right"></i></button>
+        <button onclick="gotoWorkoutActivity18()" id="continue-btn-17"><i class="fa-solid fa-angle-right"></i></button>
+        <button onclick="gotoWorkoutActivity19()" id="continue-btn-18"><i class="fa-solid fa-angle-right"></i></button>
+        <button onclick="finishedWorkout()" id="finishedWorkout"><i class="fa-solid fa-check"></i></button>
+      </div>
+    </div>
+    <div class="workout-stage">
+      <span id="warmup-stage">WARMUP</span>
+      <span id="exercise-stage">EXERCISE</span>
+    </div>
+    <div class="workout">
+      <div class="workout-item" id="workout-activity-1">
+        <div class="workout-item-header">
+          <h1>Jump Rope</h1>
+          <div class="timer-workout-item-div"><h3><span class="timer-workout-item" id="workoutTimer1">02:00</span></h3><button class="timer-workout-item-button" onclick="startworkoutTimer1()"><i class="fa-solid fa-play"></i></button></div>
+        </div>
+      </div>
+      <div class="workout-item" id="workout-activity-2">
+        <div class="workout-item-header">
+          <h1>Walkout Pushup</h1>
+          <h3>x10</h3>
+        </div>
+      </div>
+      <div class="workout-item" id="workout-activity-3">
+        <div class="workout-item-header">
+          <h1>Squats</h1>
+          <h3>2 x 15</h3>
+        </div>
+      </div>
+      <div class="workout-item" id="workout-activity-4">
+        <div class="workout-item-header">
+          <h1>Exercise</h1>
+          <h3>1 Minute On 1 Minute Off</h3>
+          <p>It is recommended that you find a workout interval timer app to track this workout!<!-- View our <a href="recommended-apps">suggested apps</a>!--></p>
+          <p>Set Up Your App For: <br>3 Rounds <br>5 Exercises Per Round <br>Work For 1 Minute <br>Rest 1 Minute <br>Round Reset 1 Minute</p>
+        </div>
+      </div>
+      <div class="workout-item" id="workout-activity-5">
+        <div class="workout-item-header">
+          <h1>Double Pushup Lunge Twist</h1>
+          <h3>8lbs</h3>
+        </div>
+      </div>
+      <div class="workout-item" id="workout-activity-6">
+        <div class="weightedCrossoverLungesItemHeader">
+          <h1>Kettle Bell Swings</h1>
+          <h3>15lbs</h3>
+        </div>
+      </div>
+      <div class="workout-item" id="workout-activity-7">
+        <div class="workout-item-header">
+          <h1>Dead Bugs</h1>
+          <h3>12 lbs</h3>
+        </div>
+      </div>
+      <div class="workout-item" id="workout-activity-8">
+        <div class="workout-item-header">
+          <h1>Thrusters</h1>
+          <h3>3lbs</h3>
+        </div>
+      </div>
+      <div class="workout-item" id="workout-activity-9">
+        <div class="workout-item-header">
+          <h1>Jammers</h1>
+          <h3>3lbs</h3>
+        </div>
+      </div>
+      <div class="workout-item" id="workout-activity-10">
+        <div class="workout-item-header">
+          <h1>Double Pushup Lunge Twist</h1>
+          <h3>8lbs</h3>
+        </div>
+      </div>
+      <div class="workout-item" id="workout-activity-11">
+        <div class="weightedCrossoverLungesItemHeader">
+          <h1>Kettle Bell Swings</h1>
+          <h3>15lbs</h3>
+        </div>
+      </div>
+      <div class="workout-item" id="workout-activity-12">
+        <div class="workout-item-header">
+          <h1>Dead Bugs</h1>
+          <h3>12 lbs</h3>
+        </div>
+      </div>
+      <div class="workout-item" id="workout-activity-13">
+        <div class="workout-item-header">
+          <h1>Thrusters</h1>
+          <h3>3lbs</h3>
+        </div>
+      </div>
+      <div class="workout-item" id="workout-activity-14">
+        <div class="workout-item-header">
+            <h1>Jammers</h1>
+            <h3>3lbs</h3>
+        </div>
+      </div>
+      <div class="workout-item" id="workout-activity-15">
+        <div class="workout-item-header">
+          <h1>Double Pushup Lunge Twist</h1>
+          <h3>8lbs</h3>
+        </div>
+      </div>
+      <div class="workout-item" id="workout-activity-16">
+        <div class="weightedCrossoverLungesItemHeader">
+          <h1>Kettle Bell Swings</h1>
+          <h3>15lbs</h3>
+        </div>
+      </div>
+      <div class="workout-item" id="workout-activity-17">
+        <div class="workout-item-header">
+          <h1>Dead Bugs</h1>
+          <h3>12 lbs</h3>
+        </div>
+      </div>
+      <div class="workout-item" id="workout-activity-18">
+        <div class="workout-item-header">
+          <h1>Thrusters</h1>
+          <h3>3lbs</h3>
+        </div>
+      </div>
+      <div class="workout-item" id="workout-activity-19">
+        <div class="workout-item-header">
+          <h1>Jammers</h1>
+          <h3>3lbs</h3>
+        </div>
+      </div>
+    </div>
+    <script src="java/workoutB.js"></script>
+  </body>
+</html>
