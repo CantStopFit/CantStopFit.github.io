@@ -26,7 +26,7 @@
     <link rel="icon" type="image/x-icon" href="/imgs/favicon.ico" />
     <script src="java/include.js"></script>
   </head>
-  <body>
+  <body onload="startStopwatch()">
     <div class="workout-progress">
         <div class="progress-bar">
             <span class="progress-round"><span id="rd1">x1</span><span id="rd2">x2</span><span id="rd3">x3</span></span>
@@ -49,7 +49,7 @@
             <span class="progress" id="progress-item-17"></span>
             <span class="progress" id="progress-item-18"></span>
             <span class="progress" id="progress-item-19"></span>
-            <span class="workout-stopwatch"><label id="minutes">00</label><span class="workout-stopwatch-no-colon">:</span><label id="seconds">00</label></span>
+            <span id="stopwatch">0:00</span>
         </div>
     </div>
     <div class="workout-advancment">
@@ -169,13 +169,13 @@
       <div class="workout-item" id="workout-activity-8">
         <div class="workout-item-header">
           <h1>Thrusters</h1>
-          <h3>3lbs</h3>
+          <h3>5lbs</h3>
         </div>
       </div>
       <div class="workout-item" id="workout-activity-9">
         <div class="workout-item-header">
           <h1>Jammers</h1>
-          <h3>3lbs</h3>
+          <h3>5lbs</h3>
         </div>
       </div>
       <div class="workout-item" id="workout-activity-10">
@@ -199,13 +199,13 @@
       <div class="workout-item" id="workout-activity-13">
         <div class="workout-item-header">
           <h1>Thrusters</h1>
-          <h3>3lbs</h3>
+          <h3>5lbs</h3>
         </div>
       </div>
       <div class="workout-item" id="workout-activity-14">
         <div class="workout-item-header">
             <h1>Jammers</h1>
-            <h3>3lbs</h3>
+            <h3>5lbs</h3>
         </div>
       </div>
       <div class="workout-item" id="workout-activity-15">
@@ -229,13 +229,13 @@
       <div class="workout-item" id="workout-activity-18">
         <div class="workout-item-header">
           <h1>Thrusters</h1>
-          <h3>3lbs</h3>
+          <h3>5lbs</h3>
         </div>
       </div>
       <div class="workout-item" id="workout-activity-19">
         <div class="workout-item-header">
           <h1>Jammers</h1>
-          <h3>3lbs</h3>
+          <h3>5lbs</h3>
         </div>
       </div>
     </div>

@@ -239,7 +239,7 @@
   display: none;
  }
 
- .workout-stopwatch {
+ #stopwatch {
   font-size: 1.4rem;
   color: #fff;
  }

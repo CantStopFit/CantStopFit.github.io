@@ -508,44 +508,31 @@ function gotoWorkoutActivity1() {
     //Check Icon
     document.getElementById('finishedWorkout').style.color = "rgba(88, 255, 96, 0.8)";
     //Back Icon
-    document.getElementById('back-btn-18').style.display = "none";  
+    document.getElementById('back-btn-18').style.display = "none";
+    //Stopwatch
+    clearInterval(stopwatch);
   }
   //Workout Stopwatch
-  var minutesLabel = document.getElementById("minutes");
-  var secondsLabel = document.getElementById("seconds");
-  var totalSeconds = 0;
-  setInterval(setTime, 1000);
-  
-  function setTime() {
-    ++totalSeconds;
-    secondsLabel.innerHTML = pad(totalSeconds % 60);
-    minutesLabel.innerHTML = pad(parseInt(totalSeconds / 60));
-  }
-  
-  function pad(val) {
-    var valString = val + "";
-    if (valString.length < 2) {
-      return "0" + valString;
-    } else {
-      return valString;
+  let stopwatch;
+  let seconds = 0;
+  let minutes = 0;
+
+  function updateStopwatch() {
+    seconds++;
+
+    if (seconds === 60) {
+      seconds = 0;
+      minutes++;
     }
+
+    const stopwatchElement = document.getElementById('stopwatch');
+    stopwatchElement.textContent = `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
   }
-  function startworkoutTimer1() {
-    var duration = 2 * 60; // 2 minutes in seconds
-    var display = document.getElementById('workoutTimer1');
 
-    var workoutTimer1 = duration, minutes, seconds;
-    setInterval(function () {
-      minutes = parseInt(workoutTimer1 / 60, 10);
-      seconds = parseInt(workoutTimer1 % 60, 10);
+  function startStopwatch() {
+    stopwatch = setInterval(updateStopwatch, 1000);
+  }
 
-      minutes = minutes < 10 ? "0" + minutes : minutes;
-      seconds = seconds < 10 ? "0" + seconds : seconds;
-
-      display.textContent = minutes + ":" + seconds;
-
-      if (--workoutTimer1 < 0) {
-        document.getElementById('workoutTimer1').innerHTML = '00:00';
-      }
-    }, 1000);
+  function stopStopwatch() {
+    clearInterval(stopwatch);
   }
