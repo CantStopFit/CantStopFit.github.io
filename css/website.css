@@ -334,7 +334,7 @@ body {
 }
 
 .workout-info {
-  background-color: rgba(255, 255, 105, 0.849);
+  background-color: rgba(0, 184, 113, 0.55);
 }
 
 .music-info {
@@ -360,4 +360,57 @@ body {
   .launch-info i {
     display: none;
   }
+}
+
+#EmailSubForm {
+  background-color: rgba(255, 255, 105, 0.849);
+  width: 100%;
+  height: 15rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#EmailSubForm div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#EmailSubForm input{
+  border: none;
+  height: 20px;
+  width: 50%;
+  margin: 30px;
+  background: none;
+  padding: 3px;
+  border-bottom: 2px solid rgb(49, 49, 49);
+  transition: all .2s ease-in;
+  font-size: 15px;
+}
+
+#EmailSubForm input:focus {
+  scale: 1.05;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid rgb(49, 49, 49);
+}
+
+#EmailSubForm button {
+  border-radius: 7px;
+  padding: 3px;
+  background-color: rgb(49, 49, 49);
+  color: #fff;
+  border: none;
+  transition: all .2s ease;
+  font-size: 15px;
+}
+
+#EmailSubForm button:hover {
+  scale: 1.15;
+  background-color: #fff;
+  color: rgb(49, 49, 49);
+  cursor: pointer;
 }
