@@ -264,27 +264,33 @@ function finishedWorkout() {
   //Check Icon
   document.getElementById('finishedWorkout').style.color = "rgba(88, 255, 96, 0.8)";
   //Back Icon
-  document.getElementById('back-btn-9').style.display = "none";  
+  document.getElementById('back-btn-9').style.display = "none";
+  //Stopwatch
+  clearInterval(stopwatch);  
 }
 //Workout Stopwatch
-var minutesLabel = document.getElementById("minutes");
-var secondsLabel = document.getElementById("seconds");
-var totalSeconds = 0;
-setInterval(setTime, 1000);
+let stopwatch;
+let seconds = 0;
+let minutes = 0;
 
-function setTime() {
-  ++totalSeconds;
-  secondsLabel.innerHTML = pad(totalSeconds % 60);
-  minutesLabel.innerHTML = pad(parseInt(totalSeconds / 60));
+function updateStopwatch() {
+  seconds++;
+
+  if (seconds === 60) {
+    seconds = 0;
+    minutes++;
+  }
+
+  const stopwatchElement = document.getElementById('stopwatch');
+  stopwatchElement.textContent = `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
 }
 
-function pad(val) {
-  var valString = val + "";
-  if (valString.length < 2) {
-    return "0" + valString;
-  } else {
-    return valString;
-  }
+function startStopwatch() {
+  stopwatch = setInterval(updateStopwatch, 1000);
+}
+
+function stopStopwatch() {
+  clearInterval(stopwatch);
 }
       function startworkoutTimer1() {
         var duration = 2 * 60; // 2 minutes in seconds

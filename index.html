@@ -16,19 +16,21 @@
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Can't Stop Fit</title>
     <meta name="google-site-verification" content="d-vcHUgu_nDhLdfV2oY07HRPSvPorRLP-Omv_Va8ZfM" />
     <meta name="description" content="We are an online workout program company that anyone can do at home! We also provide daily at-home challenges!"/>
     <meta name="robots" content="index,follow">
     <meta name="googlebot" content="index,follow">
     <link rel="icon" type="image/x-icon" href="/imgs/favicon.ico" />
-    <script src="java/include.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/include.js"></script>
   </head>
   <body>
     <include src="nav/nav.html"></include>
     <main>
       <div class="hero">
-        <img src="imgs/heros/cant-stop-fit-hero-home.png" style="width:100%;">
+        <img src="imgs/heros/cant-stop-fit-hero-home.png" >
         <div class="hero-text">
           <h1>CAN'T<span class="hero-white-txt">STOP</span></h1>
           <h3 class="hero-white-txt">Workout Classes for Any Age or Skill</h3>
@@ -36,7 +38,7 @@
         </div>
       </div>
     </main>
-    <section class="starting-steps">
+    <!-- <section class="starting-steps">
       <div id="step-1" class="step">
         <div class="step-number">
           <h1>1</h1>
@@ -73,28 +75,28 @@
           <p>Start the timer and work your hardest and try your best!</p>
         </div>
       </div>
-    </section>
+    </section> -->
     <section class="workout-intro-section">
-      <h1>Workout Choices</h1>
+      <h1 data-aos="zoom-in">Workout Choices</h1>
       <ul class="workout-choice-cards">
         <li class="cards-list" >
-          <div class="workout-card"  id="workout-card-1">
+          <div class="workout-card"  id="workout-card-1" data-aos="zoom-in">
             <div class="workout-card-content">
               <div class="workout-card-title">Workout A</div>
               <p class="workout-card-text">This workout is designed to workout your legs. Examples of what this workout will include are, Goblet Squats, Push ups, weighted crossover lunges and split squats. At the end of this workout, you will feel a burn in your quads, that will last for a few days.</p>
             </div>
           </div>
         </li>
-        <li class="cards-list" >
-          <div class="workout-card" id="workout-card-2">
+        <li class="cards-list">
+          <div class="workout-card" id="workout-card-2" data-aos="zoom-in" data-aos-delay="100">
             <div class="workout-card-content" >
               <div class="workout-card-title">Workout B</div>
               <p class="workout-card-text">Comming Soon! Enjoy the current workouts that we have posted, they will do you just as well. This workout will drop tomorrow!</p>
             </div>
           </div>
         </li>
-        <li class="cards-list" >
-          <div class="workout-card"  id="workout-card-3">
+        <li class="cards-list">
+          <div class="workout-card"  id="workout-card-3" data-aos="zoom-in" data-aos-delay="200">
             <div class="workout-card-content" >
               <div class="workout-card-title">Workout C</div>
               <p class="workout-card-text">Comming Soon! Enjoy the current workouts that we have posted, they will do you just as well. This workout will drop in 2 days!</p>
@@ -106,8 +108,8 @@
 
     <section>
       <div class="recommended-equipment">
-        <h1 class="recommended-equipment-heading">Recommended Equipment</h1>
-        <div class="recommended-items-alert">
+        <h1 class="recommended-equipment-heading" data-aos="zoom-in">Recommended Equipment</h1>
+        <div class="recommended-items-alert" data-aos="zoom-in">
           <div class="icon"><i class="fa-regular fa-credit-card"></i></div>
           <div class="alert-content">
             <h1>BUY!</h1>
@@ -115,7 +117,7 @@
           </div>
         </div>
         <div class="equipment-cards-home">
-          <div class="equipment-card-home">
+          <div class="equipment-card-home" data-aos="fade-up" data-aos-delay="0">
             <span class="buy-equipment-page-to"><a href="https://www.target.com/p/dumbbell-5lbs-aqua-all-in-motion-8482/-/A-77459851" target="_blank"><i class='bx bx-up-arrow-alt'></i></a></span>
             <div class="equipment-card-content">
               <div class="equipment-img"><img src="imgs/equipment/5lb-weight.png"></div>
@@ -124,7 +126,7 @@
               <div class="equipment-raiting"><span class="enjoy-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span><span class="leftover-stars"></span><span class="weight-rating">4.8/5</span></div>
             </div>
           </div>
-          <div class="equipment-card-home">
+          <div class="equipment-card-home" data-aos="fade-up" data-aos-delay="50">
             <span class="buy-equipment-page-to"><a href="https://www.target.com/p/dumbbell-12lbs-gray-all-in-motion-8482/-/A-77459818" target="_blank"><i class='bx bx-up-arrow-alt'></i></a></span>
             <div class="equipment-card-content">
               <div class="equipment-img"><img src="imgs/equipment/12lb-weight.png"></div>
@@ -133,7 +135,7 @@
               <div class="equipment-raiting"><span class="enjoy-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span><span class="leftover-stars"></span><span class="weight-rating">4.8/5</span></div>
             </div>
           </div>
-          <div class="equipment-card-home">
+          <div class="equipment-card-home" data-aos="fade-up" data-aos-delay="100">
             <span class="buy-equipment-page-to"><a href="https://www.target.com/p/dumbbell-12lbs-gray-all-in-motion-8482/-/A-77459840" target="_blank"><i class='bx bx-up-arrow-alt'></i></a></span>
             <div class="equipment-card-content">
               <div class="equipment-img"><img src="imgs/equipment/15lb-weight.png"></div>
@@ -142,7 +144,7 @@
               <div class="equipment-raiting"><span class="enjoy-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></span><span class="leftover-stars"></span><span class="weight-rating">4.8/5</span></div>
             </div>
           </div>
-          <div class="equipment-card-home">
+          <div class="equipment-card-home" data-aos="fade-up" data-aos-delay="150">
             <span class="buy-equipment-page-to"><a href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwjGvoSS7p6DAxWRUUcBHXh9Dp4YABAMGgJxdQ&ase=2&gclid=CjwKCAiAvoqsBhB9EiwA9XTWGTynCtwR5gqQ_yQx_FU05gp84nJPzRKxntFF2d7LJ0Hk4BSoRPM_BRoCb4cQAvD_BwE&ohost=www.google.com&cid=CAESVeD20qCrtDnnPUTEGYflKX6Dg7dEBWfSruMx1UMG6IQhmbBZT7enJgqDc0mVuPxkWBLmzH3hNMtalE-ZMGsMUpZcGPZCShlmEOX-s-wipnVbw0VbUQc&sig=AOD64_3juJ4hsX0S-9hPVVNCvadKXNxOYQ&ctype=5&q=&nis=4&ved=2ahUKEwjEy_6R7p6DAxVfmIkEHQN4AiM4ChD1oAIoAHoECAAQDg&adurl=" target="_blank"><i class='bx bx-up-arrow-alt'></i></a></span>
             <div class="equipment-card-content">
               <div class="equipment-img"><img src="imgs/equipment/25lb-weight.png"></div>
@@ -151,8 +153,15 @@
               <div class="equipment-raiting"><span class="weight-rating">No Reviews</span></div>
             </div>  
         </div>
-        <span id="more-equipment-home" title="Not Available Yet"><a href="equipment.html">+ MORE</a></span>
+        <div class="more-equipment-home-container" data-aos="fade-up" data-aos-delay="200">
+          <span id="more-equipment-home" title="Not Available Yet"><a href="equipment.html">+ MORE</a></span>
+        </div>
       </div>
     </section>
+    <section class="BYOE">
+      <h1 class="letters-BYOE"><div class="letter-BYOE letter-BYOE-padding" data-aos="flip-left" data-aos-delay="0" data-aos-duration="700">B</div><div class="letter-BYOE letter-BYOE-padding" data-aos="flip-left" data-aos-delay="50" data-aos-duration="700">Y</div><div class="letter-BYOE letter-BYOE-padding" data-aos="flip-left" data-aos-delay="100" data-aos-duration="700">O</div><div class="letter-BYOE" data-aos="flip-left" data-aos-delay="150" data-aos-duration="700">E</div></h1>
+      <p class="BYOE-explo" data-aos="zoom-in"><span class="BYOE-explo-word">Bring</span> <span class="BYOE-explo-word">Your</span> <span class="BYOE-explo-word">Own</span> <span class="BYOE-explo-word">Energy</span></p>
+    </section>
+    <script src="js/aos.js"></script>
   </body>
 </html>

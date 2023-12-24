@@ -24,9 +24,9 @@
     />
     <title>Workout A</title>
     <link rel="icon" type="image/x-icon" href="/imgs/favicon.ico" />
-    <script src="java/include.js"></script>
+    <script src="js/include.js"></script>
   </head>
-  <body>
+  <body onload="startStopwatch()">
     <div class="workout-progress">
         <div class="progress-bar">
             <span class="progress active" id="progress-item-1"></span>
@@ -39,7 +39,7 @@
             <span class="progress" id="progress-item-8"></span>
             <span class="progress" id="progress-item-9"></span>
             <span class="progress" id="progress-item-10"></span>
-            <span class="workout-stopwatch"><label id="minutes">00</label><span class="workout-stopwatch-no-colon">:</span><label id="seconds">00</label></span>
+            <span id="stopwatch">0:00</span>
         </div>
     </div>
     <div class="workout-advancment">
@@ -147,6 +147,6 @@
         </div>
       </div>
     </div>
-    <script src="java/workoutA.js"></script>
+    <script src="js/workoutA.js"></script>
   </body>
 </html>
