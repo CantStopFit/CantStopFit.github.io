@@ -445,6 +445,29 @@ body {
 .BYOE h1 {
   display: flex;
 }
+
+.try-it {
+  height: 10rem;
+  background-color: #272727;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.try-it button {
+  border: 1px solid #fff;
+  background: none;
+  border-radius: 7px;
+  color: #fff;
+  padding: 10px;
+  width: 10rem;
+  cursor: pointer;
+  transition: all .2s ease;
+}
+
+.try-it button:hover {
+  scale: 1.10;
+}
 @media screen and (max-width: 700px) {
   #more-equipment-home {
     display: block;
