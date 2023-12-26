@@ -11,6 +11,12 @@ body {
   overflow-x: hidden;
 }
 
+
+.desktop-display-none {
+  display: none;
+}
+
+
 /* Hero */
 
 .hero {
@@ -282,7 +288,7 @@ body {
 }
 
 .equipment-img img{
-  width: 9rem;
+  height: 9rem;
 }
 
 .equipment-title{
@@ -475,6 +481,7 @@ body {
     color: #464646;
     text-decoration: none;
     max-width: fit-content;
+    margin: 20px;
   }
 
   .equipment-cards-home {
@@ -508,5 +515,9 @@ body {
 
   .letter-BYOE-padding {
     padding-right: 25px;
+  }
+
+  .equipment-mobile-display-none {
+    display: none;
   }
 }
