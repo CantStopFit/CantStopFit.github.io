@@ -12,7 +12,7 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycbyKttRpEu4ZtBy9oY-eYF
             EmailSubForm.reset();
             setTimeout(function redirectforform() {
               window.location.replace("https://cantstopfit.github.io/afterRedirect");
-          }, 10);
+          }, 1500);
         }, 20000)
 
 
