@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
 }
 
 body {
@@ -98,6 +99,7 @@ body {
   margin-left: 10px;
   border-radius: 3px;
   color: #fff;
+  overflow: hidden;
 }
 
 #email-subcribers-form-content form button i {
@@ -107,7 +109,10 @@ body {
 #email-subcribers-form-content form button:hover {
   scale: 1.18;
   background-color: #fff;
-  border: 1px solid #000;
+}
+
+#email-subcribers-form-content form div {
+  overflow: hidden;
 }
 
 #email-subcribers-form-content form button:hover{
@@ -484,6 +489,7 @@ body {
   position: absolute;
   top: 6px;
   right: 6px;
+  overflow: hidden;
 }
 
 .buy-equipment-page-to i{

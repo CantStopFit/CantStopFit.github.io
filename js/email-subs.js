@@ -10,8 +10,7 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycbyKttRpEu4ZtBy9oY-eYF
             .then(response => console.log('Success!', response))
             .catch(error => console.error('Error!', error.message))
             EmailSubForm.reset();
-            popup.style.display = "none";
-            popupBackground.style.display = "none";
+            window.location.replace("https://cantstopfit.github.io/");
         })
 
 function bye() {
