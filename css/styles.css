@@ -17,9 +17,9 @@ body {
 }
 
 
-/* #email-subcribers-form, #email-subscribers-form-background{
+#email-subcribers-form, #email-subscribers-form-background{
   display: none;
-} */
+}
 
 #email-subcribers-form {
   background-color: #f8f6f6;
