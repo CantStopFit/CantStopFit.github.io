@@ -10,8 +10,11 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycbyKttRpEu4ZtBy9oY-eYF
             .then(response => console.log('Success!', response))
             .catch(error => console.error('Error!', error.message))
             EmailSubForm.reset();
-            window.location.replace("https://cantstopfit.github.io/");
-        })
+            setTimeout(function redirectforform() {
+              window.location.replace("https://cantstopfit.github.io/afterRedirect");
+          }, 10);
+        }, 20000)
+
 
 function bye() {
     document.getElementById('email-subscribers-form-background').style.display = 'none';
